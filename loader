@@ -1,5 +1,4 @@
---Venyx UI lib
-
+--Venyx
 --Init
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -16,12 +15,12 @@ local utility = {}
 -- themes
 local objects = {}
 local themes = {
-	Background = Color3.fromRGB(13, 138, 1), 
-	Glow = Color3.fromRGB(21, 255, 0), 
-	Accent = Color3.fromRGB(0, 172, 14), 
-	LightContrast = Color3.fromRGB(27, 133, 0), 
-	DarkContrast = Color3.fromRGB(0, 142, 5),  
-	TextColor = Color3.fromRGB(255, 255, 255)
+	Background = Color3.fromRGB(24, 24, 24), 
+	Glow = Color3.fromRGB(10, 255, 0), 
+	Accent = Color3.fromRGB(10, 10, 10), 
+	LightContrast = Color3.fromRGB(20, 20, 20), 
+	DarkContrast = Color3.fromRGB(14, 14, 14),  
+	TextColor = Color3.fromRGB(21, 255, 0)
 }
 
 do
@@ -223,7 +222,7 @@ do
 				BackgroundTransparency = 1,
 				Position = UDim2.new(0.25, 0, 0.052435593, 0),
 				Size = UDim2.new(0, 511, 0, 428),
-				Image = "rbxassetid://4641149554",
+				Image = "rbxassetid://3926307971",
 				ImageColor3 = themes.Background,
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(4, 4, 296, 296)
@@ -234,7 +233,7 @@ do
 					Position = UDim2.new(0, -15, 0, -15),
 					Size = UDim2.new(1, 30, 1, 30),
 					ZIndex = 0,
-					Image = "rbxassetid://5028857084",
+					Image = "rbxassetid://3926307971",
 					ImageColor3 = themes.Glow,
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(24, 24, 276, 276)
@@ -246,7 +245,7 @@ do
 					Position = UDim2.new(0, 0, 0, 38),
 					Size = UDim2.new(0, 126, 1, -38),
 					ZIndex = 3,
-					Image = "rbxassetid://5012534273",
+					Image = "rbxassetid://3926307971",
 					ImageColor3 = themes.DarkContrast,
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(4, 4, 296, 296)
@@ -272,7 +271,7 @@ do
 					ClipsDescendants = true,
 					Size = UDim2.new(1, 0, 0, 38),
 					ZIndex = 5,
-					Image = "rbxassetid://4595286933",
+					Image = "rbxassetid://3926307971",
 					ImageColor3 = themes.Accent,
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(4, 4, 296, 296)
@@ -338,7 +337,7 @@ do
 				Position = UDim2.new(0, 12, 0.5, 0),
 				Size = UDim2.new(0, 16, 0, 16),
 				ZIndex = 3,
-				Image = "rbxassetid://" .. tostring(icon),
+				Image = "rbxassetid://3926307971" .. tostring(icon),
 				ImageColor3 = themes.TextColor,
 				ImageTransparency = 0.64
 			}) or {}
@@ -378,7 +377,7 @@ do
 			BackgroundTransparency = 1,
 			Size = UDim2.new(1, -10, 0, 28),
 			ZIndex = 2,
-			Image = "rbxassetid://5028857472",
+			Image = "rbxassetid://3926307971",
 			ImageColor3 = themes.LightContrast,
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(4, 4, 296, 296),
@@ -514,7 +513,7 @@ do
 			Parent = self.container,
 			BackgroundTransparency = 1,
 			Size = UDim2.new(0, 200, 0, 60),
-			Image = "rbxassetid://5028857472",
+			Image = "rbxassetid://3926307971",
 			ImageColor3 = themes.Background,
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(4, 4, 296, 296),
@@ -525,7 +524,7 @@ do
 				Name = "Flash",
 				Size = UDim2.new(1, 0, 1, 0),
 				BackgroundTransparency = 1,
-				Image = "rbxassetid://4641149554",
+				Image = "rbxassetid://3926307971",
 				ImageColor3 = themes.TextColor,
 				ZIndex = 5
 			}),
@@ -535,7 +534,7 @@ do
 				Position = UDim2.new(0, -15, 0, -15),
 				Size = UDim2.new(1, 30, 1, 30),
 				ZIndex = 2,
-				Image = "rbxassetid://5028857084",
+				Image = "rbxassetid://3926307971",
 				ImageColor3 = themes.Glow,
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(24, 24, 276, 276)
@@ -567,7 +566,7 @@ do
 				BackgroundTransparency = 1,
 				Position = UDim2.new(1, -26, 0, 8),
 				Size = UDim2.new(0, 16, 0, 16),
-				Image = "rbxassetid://5012538259",
+				Image = "rbxassetid://3926307971",
 				ImageColor3 = themes.TextColor,
 				ZIndex = 4
 			}),
@@ -576,7 +575,7 @@ do
 				BackgroundTransparency = 1,
 				Position = UDim2.new(1, -26, 1, -24),
 				Size = UDim2.new(0, 16, 0, 16),
-				Image = "rbxassetid://5012538583",
+				Image = "rbxassetid://3926307971",
 				ImageColor3 = themes.TextColor,
 				ZIndex = 4
 			})
@@ -729,7 +728,7 @@ do
 			BorderSizePixel = 0,
 			Size = UDim2.new(1, 0, 0, 30),
 			ZIndex = 2,
-			Image = "rbxassetid://5028857472",
+			Image = "rbxassetid://3926307971",
 			ImageColor3 = themes.DarkContrast,
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(2, 2, 298, 298)
@@ -755,7 +754,7 @@ do
 				Position = UDim2.new(1, -50, 0.5, -8),
 				Size = UDim2.new(0, 40, 0, 16),
 				ZIndex = 2,
-				Image = "rbxassetid://5028857472",
+				Image = "rbxassetid://3926307971",
 				ImageColor3 = themes.LightContrast,
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(2, 2, 298, 298)
@@ -766,7 +765,7 @@ do
 					Position = UDim2.new(0, 2, 0.5, -6),
 					Size = UDim2.new(1, -22, 1, -4),
 					ZIndex = 2,
-					Image = "rbxassetid://5028857472",
+					Image = "rbxassetid://3926307971",
 					ImageColor3 = themes.TextColor,
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(2, 2, 298, 298)
@@ -802,7 +801,7 @@ do
 			BorderSizePixel = 0,
 			Size = UDim2.new(1, 0, 0, 30),
 			ZIndex = 2,
-			Image = "rbxassetid://5028857472",
+			Image = "rbxassetid://3926307971",
 			ImageColor3 = themes.DarkContrast,
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(2, 2, 298, 298)
@@ -827,7 +826,7 @@ do
 				Position = UDim2.new(1, -110, 0.5, -8),
 				Size = UDim2.new(0, 100, 0, 16),
 				ZIndex = 2,
-				Image = "rbxassetid://5028857472",
+				Image = "rbxassetid://3926307971",
 				ImageColor3 = themes.LightContrast,
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(2, 2, 298, 298)
